@@ -65,42 +65,52 @@ let nav6 = document.querySelectorAll('nav, a');
   const ctaimgsrc = document.getElementById('cta-img');
   ctaimgsrc.setAttribute('src', siteContent['cta']['img-src'])
 
-  const mainH4Features = document.querySelector('.top-content, .text-content, h4')
+  const mainH4Features = document.querySelector('.text-content h4')
   mainH4Features.textContent = siteContent["main-content"]['features-h4']
 
-  const mainFeaturesContent = document.querySelector('.top-content, .text-content, p');
+  const mainFeaturesContent = document.querySelector('.text-content p');
   mainFeaturesContent.textContent = siteContent["main-content"]['features-content']
   
   
-  const mainH4About = document.querySelectorAll('.top-content, .text-content, h4')
-  mainH4About[2].textContent = siteContent["main-content"]['about-h4']
+  const mainH4About = document.querySelectorAll('h4')
+  mainH4About[1].textContent = siteContent["main-content"]['about-h4']
   
-  const mainAboutContent = document.querySelectorAll('.top-context, .text-content, p');
-  mainAboutContent[2].textContent = siteContent["main-content"]['about-content']
+  const mainAboutContent = document.querySelectorAll('p');
+  mainAboutContent[1].textContent = siteContent["main-content"]['about-content']
 
   const middleImg = document.querySelector('#middle-img')
   middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
-  let mainH4Services = document.querySelector('.bottom-context, .text-content, h4')
-  mainH4Services.textContent = siteContent['main-content']['services-h4']
+  let mainH4Services = document.querySelectorAll('h4')
+  mainH4Services[2].textContent = siteContent['main-content']['services-h4']
 
-  let mainServicesContent = document.querySelector('.bottom-context, .text-content, p');
-  mainAboutContent.textContent = siteContent["main-content"]['services-content']
+  let mainServicesContent = document.querySelectorAll('p');
+  mainAboutContent[2].textContent = siteContent["main-content"]['services-content']
 
 
-  let mainH4Product = document.querySelectorAll('.bottom-context, .text-content, h4')
-  mainH4Product[2].textContent = siteContent['main-content']['product-h4']
+  let mainH4Product = document.querySelectorAll('h4')
+  mainH4Product[3].textContent = siteContent['main-content']['product-h4']
 
-  let mainProductContent = document.querySelectorAll('.bottom-context, .text-content, p');
-  mainAboutContent[2].textContent = siteContent["main-content"]['product-content']
+  let mainProductContent = document.querySelectorAll('p');
+  mainAboutContent[3].textContent = siteContent["main-content"]['product-content']
 
   
-  let mainH4Vision = document.querySelectorAll('.bottom-context, .text-content, h4')
-  mainH4Vision[3].innerHTML = siteContent['main-content']['vision-h4']
+  let mainH4Vision = document.querySelectorAll('h4')
+  mainH4Vision[4].textContent = siteContent['main-content']['vision-h4']
 
-  let mainVisionContent = document.querySelectorAll('.bottom-context, .text-content, p');
-  mainVisionContent[3].textContent = siteContent["main-content"]['vision-content']
+  let mainVisionContent = document.querySelectorAll('p');
+  mainVisionContent[4].textContent = siteContent["main-content"]['vision-content']
 
-let contactH4 = document.querySelector('.contact, h4')
-contactH4.innerHTML = siteContent['contact']['contact-h4']
+let contactH4 = document.querySelector('.contact h4')
+contactH4.textContent = siteContent['contact']['contact-h4']
   
+let contactContent = document.querySelector('.contact p');
+contactContent.textContent = siteContent['contact']['address']
+
+let contactContentPhone = document.querySelectorAll('.contact p');
+contactContentPhone[1].textContent = siteContent['contact']['phone']
+let contactContentEmail = document.querySelectorAll('.contact p');
+contactContentEmail[2].textContent = siteContent['contact']['email']
+
+let footerP = document.querySelector('footer p')
+footerP.textContent = siteContent['footer']['copyright']
